@@ -950,7 +950,7 @@ contains
 
 #ifdef OSLO_AERO
     prog_modal_aero = .true.
-#else    
+#else
     call phys_getopts(prog_modal_aero_out=prog_modal_aero)
 #endif
 
@@ -1435,7 +1435,6 @@ contains
     use dyn_tests_utils,    only: vc_dycore, vc_height, vc_dry_pressure
     use air_composition,    only: cpairv, cp_or_cv_dycore
 #ifdef OSLO_AERO
-    use oslo_aero_params
     use oslo_aero_share
 #endif
     !
@@ -2928,7 +2927,7 @@ contains
       end if
 
 #ifndef OSLO_AERO
-      ! Calculate aerosol size distribution parameters 
+      ! Calculate aerosol size distribution parameters
       call modal_aero_calcsize_diag(state, pbuf)
 
       ! CAM specific driver for modal aerosol water uptake code.
