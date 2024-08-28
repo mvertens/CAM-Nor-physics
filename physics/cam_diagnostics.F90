@@ -190,7 +190,7 @@ contains
     use cam_history,           only: register_vector_field
     use tidal_diag,            only: tidal_diag_init
     use cam_budget,            only: cam_budget_em_snapshot, cam_budget_em_register, thermo_budget_history
-    use oslo_aero_share,       only: use_oslo_aero, oslo_aero_diagnostic
+    use oslo_aero_share,       only: use_oslo_aero
     use oslo_aero_diagnostics, only: oslo_aero_diagnostics_init
 
     type(physics_buffer_desc), pointer, intent(in) :: pbuf2d(:,:)
